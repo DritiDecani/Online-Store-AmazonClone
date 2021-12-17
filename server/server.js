@@ -2,10 +2,13 @@ const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express()
 
-mongoose.connect('mongodb+srv://root:md28KwCEyVrjKh5@amazonclone.pjais.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect(process.env.DATABASE,
  (err) =>{
     if (err){
         console.log(err);
