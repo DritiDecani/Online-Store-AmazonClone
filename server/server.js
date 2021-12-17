@@ -1,8 +1,19 @@
 const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
 
 const app = express()
+
+mongoose.connect('mongodb+srv://root:md28KwCEyVrjKh5@amazonclone.pjais.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+ (err) =>{
+    if (err){
+        console.log(err);
+    }else{
+        console.log("Connected to the Database")
+    }
+  }
+);
 
 //Middlewares
 app.use(morgan('dev'));
