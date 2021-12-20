@@ -27,5 +27,5 @@ router.post("/products",async (req, res) => {
 //GET
 //GET single
 //PUT update
-//DELET
+//Delete
 module.exports = router;
