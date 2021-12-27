@@ -3,21 +3,18 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_91b304f4"
+    "chunkName": "pages/about"
   },
   {
     "name": "product",
     "path": "/product",
     "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\product.vue",
-    "chunkName": "pages/product",
-    "_name": "_2ea1b1a8"
+    "chunkName": "pages/product"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_52434f6a"
+    "chunkName": "pages/index"
   }
 ]
