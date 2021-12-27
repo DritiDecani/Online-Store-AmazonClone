@@ -1,9 +1,14 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\Amazon Project\\\\admin\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_46cd29ad"
+    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
