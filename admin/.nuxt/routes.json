@@ -14,6 +14,13 @@
     "_name": "_3e22738f"
   },
   {
+    "name": "owner",
+    "path": "/owner",
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/owner.vue",
+    "chunkName": "pages/owner",
+    "_name": "_568e291c"
+  },
+  {
     "name": "product",
     "path": "/product",
     "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/product.vue",

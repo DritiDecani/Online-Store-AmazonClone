@@ -22,8 +22,8 @@
                         </div>
                     </form>
                     <br />
-                    <ul class="list-group-item">
-                        <li v-for="category in categories" :key="category._id">{{ category.type }}</li>
+                    <ul class="list-group">
+                        <li v-for="category in categories" :key="category._id" class="list-group-item">{{ category.type }}</li>
                     </ul>
                 </div>
                 <div class="col-sm-3"></div>
