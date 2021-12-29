@@ -2,19 +2,29 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_f85bc168"
+  },
+  {
+    "name": "category",
+    "path": "/category",
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/category.vue",
+    "chunkName": "pages/category",
+    "_name": "_3e22738f"
   },
   {
     "name": "product",
     "path": "/product",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\product.vue",
-    "chunkName": "pages/product"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/product.vue",
+    "chunkName": "pages/product",
+    "_name": "_7eebf9ee"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_b8ec0bde"
   }
 ]

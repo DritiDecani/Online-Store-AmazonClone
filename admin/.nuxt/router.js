@@ -4,9 +4,10 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _91b304f4 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _2ea1b1a8 = () => interopDefault(import('..\\pages\\product.vue' /* webpackChunkName: "pages/product" */))
-const _52434f6a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _f85bc168 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
+const _3e22738f = () => interopDefault(import('../pages/category.vue' /* webpackChunkName: "pages/category" */))
+const _7eebf9ee = () => interopDefault(import('../pages/product.vue' /* webpackChunkName: "pages/product" */))
+const _b8ec0bde = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -21,15 +22,19 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _91b304f4,
+    component: _f85bc168,
     name: "about"
   }, {
+    path: "/category",
+    component: _3e22738f,
+    name: "category"
+  }, {
     path: "/product",
-    component: _2ea1b1a8,
+    component: _7eebf9ee,
     name: "product"
   }, {
     path: "/",
-    component: _52434f6a,
+    component: _b8ec0bde,
     name: "index"
   }],
 
