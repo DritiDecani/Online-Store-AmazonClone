@@ -21,11 +21,18 @@
     "_name": "_568e291c"
   },
   {
-    "name": "product",
-    "path": "/product",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/product.vue",
-    "chunkName": "pages/product",
-    "_name": "_7eebf9ee"
+    "name": "products",
+    "path": "/products",
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/products/index.vue",
+    "chunkName": "pages/products/index",
+    "_name": "_06b1c090"
+  },
+  {
+    "name": "products-id",
+    "path": "/products/:id",
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/products/_id.vue",
+    "chunkName": "pages/products/_id",
+    "_name": "_4069b020"
   },
   {
     "name": "index",

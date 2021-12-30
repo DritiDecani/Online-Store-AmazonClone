@@ -7,7 +7,8 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _f85bc168 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
 const _3e22738f = () => interopDefault(import('../pages/category.vue' /* webpackChunkName: "pages/category" */))
 const _568e291c = () => interopDefault(import('../pages/owner.vue' /* webpackChunkName: "pages/owner" */))
-const _7eebf9ee = () => interopDefault(import('../pages/product.vue' /* webpackChunkName: "pages/product" */))
+const _06b1c090 = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
+const _4069b020 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
 const _b8ec0bde = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -34,9 +35,13 @@ export const routerOptions = {
     component: _568e291c,
     name: "owner"
   }, {
-    path: "/product",
-    component: _7eebf9ee,
-    name: "product"
+    path: "/products",
+    component: _06b1c090,
+    name: "products"
+  }, {
+    path: "/products/:id",
+    component: _4069b020,
+    name: "products-id"
   }, {
     path: "/",
     component: _b8ec0bde,
