@@ -6,4 +6,4 @@ Run Admin = Npm run dev
 
 Run Server = Node server
 
-LF-CRLF == git config --global core.autocrlf true   ++  git config core.safecrlf false
+LF-CRLF(error) == git config --global core.autocrlf true   ++  git config core.safecrlf false
