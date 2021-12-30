@@ -1,6 +1,7 @@
 {
   "name": "admin",
   "short_name": "admin",
+  "description": "```bash\r # install dependencies\r $ npm install",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.e3e9fb.png",
