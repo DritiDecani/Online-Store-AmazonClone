@@ -7,7 +7,7 @@
                 <b>
                     Browse for more books
                     <a href="#">leaders of notable people </a> or
-                    <a href="#">Fantasy books</a> like Harry Poter or Game of Thrones
+                    <a href="#">Fantasy books</a> like Harry Potter or Game of Thrones
                     <a href="#">Best fantasy books of the year so far</a>
                 </b>
             </p>
