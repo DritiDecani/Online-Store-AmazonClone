@@ -2,43 +2,37 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "E:\\\\Amazon Project 2\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_4268d7e2"
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
   },
   {
     "name": "category",
     "path": "/category",
-    "component": "E:\\\\Amazon Project 2\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
-    "chunkName": "pages/category",
-    "_name": "_099d23ec"
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
+    "chunkName": "pages/category"
   },
   {
     "name": "owner",
     "path": "/owner",
-    "component": "E:\\\\Amazon Project 2\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
-    "chunkName": "pages/owner",
-    "_name": "_2fb26035"
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
+    "chunkName": "pages/owner"
   },
   {
     "name": "products",
     "path": "/products",
-    "component": "E:\\\\Amazon Project 2\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
-    "chunkName": "pages/products/index",
-    "_name": "_10910220"
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
+    "chunkName": "pages/products/index"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
-    "component": "E:\\\\Amazon Project 2\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
-    "chunkName": "pages/products/_id",
-    "_name": "_380f0550"
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
+    "chunkName": "pages/products/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "E:\\\\Amazon Project 2\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_02f92258"
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
   }
 ]
