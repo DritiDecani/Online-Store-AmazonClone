@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _f68881ac = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
-const _71455ef1 = () => interopDefault(import('..\\pages\\category.vue' /* webpackChunkName: "pages/category" */))
-const _54bae960 = () => interopDefault(import('..\\pages\\owner.vue' /* webpackChunkName: "pages/owner" */))
-const _0fccc44b = () => interopDefault(import('..\\pages\\products\\index.vue' /* webpackChunkName: "pages/products/index" */))
-const _8875451a = () => interopDefault(import('..\\pages\\products\\_id.vue' /* webpackChunkName: "pages/products/_id" */))
-const _b718cc22 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _91b304f4 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _f5b899d6 = () => interopDefault(import('..\\pages\\category.vue' /* webpackChunkName: "pages/category" */))
+const _080d49ac = () => interopDefault(import('..\\pages\\owner.vue' /* webpackChunkName: "pages/owner" */))
+const _04923fa7 = () => interopDefault(import('..\\pages\\products\\index.vue' /* webpackChunkName: "pages/products/index" */))
+const _11ac0062 = () => interopDefault(import('..\\pages\\products\\_id.vue' /* webpackChunkName: "pages/products/_id" */))
+const _52434f6a = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _f68881ac,
+    component: _91b304f4,
     name: "about"
   }, {
     path: "/category",
-    component: _71455ef1,
+    component: _f5b899d6,
     name: "category"
   }, {
     path: "/owner",
-    component: _54bae960,
+    component: _080d49ac,
     name: "owner"
   }, {
     path: "/products",
-    component: _0fccc44b,
+    component: _04923fa7,
     name: "products"
   }, {
     path: "/products/:id",
-    component: _8875451a,
+    component: _11ac0062,
     name: "products-id"
   }, {
     path: "/",
-    component: _b718cc22,
+    component: _52434f6a,
     name: "index"
   }],
 
