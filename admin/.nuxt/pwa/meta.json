@@ -21,11 +21,6 @@
       "content": "admin"
     },
     {
-      "hid": "description",
-      "name": "description",
-      "content": "```bash\r # install dependencies\r $ npm install"
-    },
-    {
       "hid": "og:type",
       "name": "og:type",
       "property": "og:type",
@@ -42,12 +37,6 @@
       "name": "og:site_name",
       "property": "og:site_name",
       "content": "admin"
-    },
-    {
-      "hid": "og:description",
-      "name": "og:description",
-      "property": "og:description",
-      "content": "```bash\r # install dependencies\r $ npm install"
     }
   ],
   "link": [
@@ -64,7 +53,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.4fbb2d58.json",
+      "href": "/_nuxt/manifest.69073725.json",
       "hid": "manifest"
     }
   ],

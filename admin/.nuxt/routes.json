@@ -2,37 +2,43 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_f85bc168"
   },
   {
     "name": "category",
     "path": "/category",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
-    "chunkName": "pages/category"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/category.vue",
+    "chunkName": "pages/category",
+    "_name": "_3e22738f"
   },
   {
     "name": "owner",
     "path": "/owner",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
-    "chunkName": "pages/owner"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/owner.vue",
+    "chunkName": "pages/owner",
+    "_name": "_568e291c"
   },
   {
     "name": "products",
     "path": "/products",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
-    "chunkName": "pages/products/index"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/products/index.vue",
+    "chunkName": "pages/products/index",
+    "_name": "_06b1c090"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
-    "chunkName": "pages/products/_id"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/products/_id.vue",
+    "chunkName": "pages/products/_id",
+    "_name": "_4069b020"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_b8ec0bde"
   }
 ]
