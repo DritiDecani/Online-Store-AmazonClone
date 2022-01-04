@@ -10,14 +10,12 @@
                             <a class="a-link a-color-tertiary" href="#">{{ product.category.type }}</a>
                         </span>
                     </li>
-                     <li>
+                    <li>
                         <span class="a-list-item">
                             <a class="a-link a-color-tertiary" href="#">{{ product.title}}</a>
                         </span>
                     </li>
-                 
                 </ul>
-
             </div>
         </div>
         <div class="container-fluid">
