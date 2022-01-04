@@ -23,15 +23,17 @@ router.post("/products", upload.single("photo"), async (req, res) => {
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: err.nessage,
+      message: err.message,
     });
   }
 });
 
-//GET
-router.get("/products", async (req, res) => {
+//GET request - get all products
+router.get("/products/:id", async (req, res) => {
   try {
-    let products = await Product.find();
+    let products = await Product.find()
+    .populate("owner category")
+    .exec();
     res.json({
       success: true,
       products: products,
@@ -44,12 +46,10 @@ router.get("/products", async (req, res) => {
   }
 });
 
-//GET request - get all products
-router.get("/products/:id", async (req, res) => {
+//GET request - get a single product
+router.get("/products", async (req, res) => {
   try {
-    let product = await Product.findOne()
-    .populate("owner category")
-    .exec();
+    let product = await Product.findOne({ _id: req.params.id }).populate('owner category').exec();
     res.json({
       success: true,
       product: product,
@@ -61,6 +61,7 @@ router.get("/products/:id", async (req, res) => {
     });
   }
 });
+
 //PUT update
 router.put("/products/:id", upload.single("photo"), async (req, res) => {
   try {
