@@ -90,9 +90,10 @@
                             <div class="reviewGroup"></div>
                             <hr style="margin-top: 10px;"/>
                             <!-- A Tags Dummy Data -->
-                            <div class="mediaMatirx">
+                            <div class="mediaMatrix">
                                 <div class="formats">
                                     <a href="#" class="link-expander">
+                                        >
                                         <span class="tmmShowPrompt">See all 18 formats and editions</span>
                                     </a>
                                     <ul>
@@ -226,7 +227,7 @@
                                     <div class="a-section a-spacing-none">
                                         <span class="a-size-medium a-color-success">In Stock</span>
                                     </div>
-                                    <div class="a-section a-spacing-mini">Ships from and sold by Amazone.com</div>
+                                    <div class="a-section a-spacing-mini">Ships from and sold by OnlineStore.com</div>
                                 </div>
 
                                 <div class="a-section">
