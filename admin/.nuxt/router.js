@@ -4,12 +4,12 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _f85bc168 = () => interopDefault(import('../pages/about.vue' /* webpackChunkName: "pages/about" */))
-const _3e22738f = () => interopDefault(import('../pages/category.vue' /* webpackChunkName: "pages/category" */))
-const _568e291c = () => interopDefault(import('../pages/owner.vue' /* webpackChunkName: "pages/owner" */))
-const _06b1c090 = () => interopDefault(import('../pages/products/index.vue' /* webpackChunkName: "pages/products/index" */))
-const _4069b020 = () => interopDefault(import('../pages/products/_id.vue' /* webpackChunkName: "pages/products/_id" */))
-const _b8ec0bde = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _f68881ac = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages/about" */))
+const _71455ef1 = () => interopDefault(import('..\\pages\\category.vue' /* webpackChunkName: "pages/category" */))
+const _54bae960 = () => interopDefault(import('..\\pages\\owner.vue' /* webpackChunkName: "pages/owner" */))
+const _0fccc44b = () => interopDefault(import('..\\pages\\products\\index.vue' /* webpackChunkName: "pages/products/index" */))
+const _8875451a = () => interopDefault(import('..\\pages\\products\\_id.vue' /* webpackChunkName: "pages/products/_id" */))
+const _b718cc22 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -24,27 +24,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/about",
-    component: _f85bc168,
+    component: _f68881ac,
     name: "about"
   }, {
     path: "/category",
-    component: _3e22738f,
+    component: _71455ef1,
     name: "category"
   }, {
     path: "/owner",
-    component: _568e291c,
+    component: _54bae960,
     name: "owner"
   }, {
     path: "/products",
-    component: _06b1c090,
+    component: _0fccc44b,
     name: "products"
   }, {
     path: "/products/:id",
-    component: _4069b020,
+    component: _8875451a,
     name: "products-id"
   }, {
     path: "/",
-    component: _b8ec0bde,
+    component: _b718cc22,
     name: "index"
   }],
 

@@ -2,43 +2,43 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/about.vue",
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
     "chunkName": "pages/about",
-    "_name": "_f85bc168"
+    "_name": "_f68881ac"
   },
   {
     "name": "category",
     "path": "/category",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/category.vue",
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
     "chunkName": "pages/category",
-    "_name": "_3e22738f"
+    "_name": "_71455ef1"
   },
   {
     "name": "owner",
     "path": "/owner",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/owner.vue",
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
     "chunkName": "pages/owner",
-    "_name": "_568e291c"
+    "_name": "_54bae960"
   },
   {
     "name": "products",
     "path": "/products",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/products/index.vue",
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
     "chunkName": "pages/products/index",
-    "_name": "_06b1c090"
+    "_name": "_0fccc44b"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/products/_id.vue",
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
     "chunkName": "pages/products/_id",
-    "_name": "_4069b020"
+    "_name": "_8875451a"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/besmirgashi/Projects/Online-Store/admin/pages/index.vue",
+    "component": "C:\\\\Users\\\\Dell\\\\Documents\\\\GitHub\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_b8ec0bde"
+    "_name": "_b718cc22"
   }
 ]
