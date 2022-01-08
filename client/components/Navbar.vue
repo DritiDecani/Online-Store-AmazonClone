@@ -29,7 +29,7 @@
                     >Deliver to</span
                   >
                   <span class="nav-line-2" id="glow-ingress-line2"
-                    >California</span
+                    >Kosovo</span
                   >
                 </div>
               </nuxt-link>
@@ -89,6 +89,24 @@
                 </span>
               </a>
               <span class="icp-nav-link-border"></span>
+              <template v-if="$auth.$state.loggedIn">
+              <nuxt-link
+                to="/register"
+                class="nav-a nav-a-2"
+                id="nav-link-accountList"
+                tabindex="0"
+              >
+              <span class="nav-line-1">Hello</span>
+              <span class="nav-line-2">  {{$auth.$state.user.name}}</span>
+                
+                  
+                
+              
+
+              </nuxt-link> 
+              </template>
+
+              <template v-else>
               <nuxt-link
                 to="/register"
                 class="nav-a nav-a-2"
@@ -104,6 +122,7 @@
                   ></span>
                 </span>
               </nuxt-link>
+              </template>
               <nuxt-link to="/orders" class="nav-a nav-a-2 nav-single-row-link">
               <span class="nav-line-1"></span>
               <span class="nav-line-2">Orders</span>
