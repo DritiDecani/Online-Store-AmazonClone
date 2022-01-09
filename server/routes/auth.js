@@ -50,7 +50,32 @@ router.get("/auth/user",verifyToken, async(req, res) => {
       message: err.message
     });
   }
-})
+});
+
+/* Update a profile */
+router.put("/auth/user", verifyToken, async(req, res) => {
+  try {
+    let foundUser = await User.findOne({ _id: req.decoded._id });
+
+    if(foundUser) {
+      if (req.body.name) foundUser.name = req.body.name;
+      if (req.body.email) foundUser.email = req.body.email;
+      if (req.body.password) foundUser.password = req.body.password;
+
+      await foundUser.save();
+
+      req.json({
+        success: true,
+        message: "Succesfully updated"
+      });
+    }
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message
+    });
+  }
+});
 
 /* Login Route */
 router.post("/auth/login", async(req, res) => {
@@ -80,6 +105,6 @@ router.post("/auth/login", async(req, res) => {
       message: err.message
     });
   }
-})
+});
 
 module.exports = router;

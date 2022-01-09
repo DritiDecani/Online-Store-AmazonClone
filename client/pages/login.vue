@@ -49,9 +49,6 @@
                                         <nuxt-link to="/signup" class="a-link-emphasis">Sign Up</nuxt-link>
                                     </b>
                                 </div>
-
-
-
                             </div>
                         </div>
                     </form>
