@@ -103,7 +103,7 @@
 
               <template v-else>
               <nuxt-link
-                to="/profile"
+                to="/signup"
                 class="nav-a nav-a-2"
                 id="nav-link-accountList"
                 tabindex="0"
