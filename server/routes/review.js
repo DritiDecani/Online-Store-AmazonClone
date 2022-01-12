@@ -16,18 +16,20 @@ router.post("/reviews/:prductID",[verifyToken, upload.single("photo")],
       review.user = req.decoded._id;
       review.productID = req.params.productID;
 
-      await Product.update({ $push: review._id });
+      await Product.update({ $push: { rating: review._id }});
+
       const savedReview = await review.save();
+
       if (savedReview) {
         res.json({
           success: true,
-          message: "Succesfully Added Review",
+          message: "Succesfully Added Review"
         });
       }
     } catch (err) {
       res.status(500).json({
         success: false,
-        message: err.message,
+        message: err.message
       });
     }
   }
@@ -37,18 +39,19 @@ router.post("/reviews/:prductID",[verifyToken, upload.single("photo")],
 router.get("/reviews/:productID", async (req, res) => {
   try {
     const productReviews = await Review.find({
-      productID: req.params.productID,
+      productID: req.params.productID
     })
-      .populate("user").exec();
+      .populate("user")
+      .exec();
 
     res.json({
       success: true,
-      reviews: productReviews,
+      reviews: productReviews
     });
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: err.message,
+      message: err.message
     });
   }
 });
