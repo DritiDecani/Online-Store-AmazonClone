@@ -232,7 +232,7 @@ export default {
 
   data() {
     return {
-      country: "Kosovo",
+      country: "Republic of Kosovo",
       fullName: "",
       streetAddress1: "",
       streetAddress2: "",
