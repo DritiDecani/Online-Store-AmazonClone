@@ -65,6 +65,7 @@
                 <textarea
                   placeholder="What do you like or dislike? What did you see this product for?"
                   style="height: 6em; width: 100%"
+                  v-model="body"
                 ></textarea>
               </div>
             </div>
