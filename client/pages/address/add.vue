@@ -251,8 +251,7 @@ export default {
         let data = {
           country: this.country,
           fullName: this.fullName,
-          streetAddress1: this.streetAddress1,
-          streetAddress2: this.streetAddress2,
+          streetAddress1: this.streetAddress1 + " " + this.streetAddress2,
           city: this.city,
           state: this.state,
           zipCode: this.zipCode,
