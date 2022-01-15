@@ -256,14 +256,14 @@ export default {
           state: this.state,
           zipCode: this.zipCode,
           phoneNumber: this.phoneNumber,
-          deliveryInstructions: this.deliveryInstructions,
+          deliverInstructions: this.deliverInstructions,
           securityCode: this.securityCode
         };
 
         let response = await this.$axios.$post("/api/addresses", data);
 
         if (response.success) {
-          this.$router.push("/");
+          this.$router.push("/address");
         }
       } catch (err) {
         console.log(err);
