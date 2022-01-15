@@ -4,6 +4,7 @@ const verifyToken = require("../middlewares/verify-token");
 const axios = require("axios");
 const user = require("../models/user");
 
+/* POST API - Create an address */
 router.post("/addresses", verifyToken, async (req, res) => {
   try {
     let address = new Address();
@@ -30,6 +31,7 @@ router.post("/addresses", verifyToken, async (req, res) => {
   }
 });
 
+/* GET API - Get all addresses */
 router.get("/addresses", verifyToken, async (req, res) => {
   try {
     let addresses = await Address.find({ user: req.decoded._id });
@@ -46,6 +48,7 @@ router.get("/addresses", verifyToken, async (req, res) => {
   }
 });
 
+/* GET API - Get list of countries */
 router.get("/countries", async (req, res) => {
   try {
     let response = await axios.get("https://restcountries.com/v2/all");
@@ -59,7 +62,7 @@ router.get("/countries", async (req, res) => {
   }
 });
 
-
+/* POST API - Update an address */
 router.put("/addresses/:id", verifyToken, async (req, res) => {
   try {
     let foundAddress = await Address.findOne({ _id: req.params.id });
@@ -89,7 +92,7 @@ router.put("/addresses/:id", verifyToken, async (req, res) => {
   }
 });
 
-
+/* DELETE API - Delete an address */
 router.delete("/addresses/:id", verifyToken, async (req, res) => {
   try {
     let deletedAddress = await Address.remove({
@@ -111,6 +114,7 @@ router.delete("/addresses/:id", verifyToken, async (req, res) => {
   }
 });
 
+/* PUT API - Set default */
 router.put("/addresses/:id", verifyToken, async(req, res) => {
   try {
     const doc = await User.findOneAndUpdate({_id: req.decoded.id}, { $set: { address: req.body.id }});
