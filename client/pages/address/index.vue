@@ -93,5 +93,21 @@
   <!--/MAIN-->
 </template>
 
+<script>
+// import { defineComponent } from '@vue/composition-api'
 
+export default {
+    async asyncData() {
+        try{
+            let response = await $axios.$get("/api/addresses");
 
+            return{
+                addresses: response.addresses
+            }
+        } catch(err) {
+            console.log(err);
+        }
+    },
+    
+};
+</script>
