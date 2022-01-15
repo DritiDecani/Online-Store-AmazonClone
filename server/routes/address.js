@@ -2,6 +2,7 @@ const router = require("express").Router();
 const Address = require("../models/address");
 const verifyToken = require("../middlewares/verify-token");
 const axios = require("axios");
+const user = require("../models/user");
 
 router.post("/addresses", verifyToken, async (req, res) => {
   try {
@@ -108,5 +109,22 @@ router.delete("/addresses/:id", verifyToken, async (req, res) => {
       message: err.message,
     });
   }
-});  
+});
+
+router.put("/addresses/:id", verifyToken, async(req, res) => {
+  try {
+    const doc = await User.findOneAndUpdate({_id: req.decoded.id}, { $set: { address: req.body.id }});
+    if(doc) {
+      res.json({
+        success: true,
+        message: "Succesfully set this address as default"
+      })
+    }
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message,
+    });
+  }
+})
 module.exports = router;
