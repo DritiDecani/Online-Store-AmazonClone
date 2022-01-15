@@ -108,6 +108,11 @@ export default {
             console.log(err);
         }
     },
+    data() {
+        return {
+            message: ""
+        }
+    },
     
 };
 </script>
