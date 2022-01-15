@@ -58,4 +58,34 @@ router.get("/countries", async (req, res) => {
   }
 });
 
+
+router.put("/addresses/:id", verifyToken, async (req, res) => {
+  try {
+    let foundAddress = await Address.findOne({ _id: req.params.id });
+    if (foundAddress) {
+
+      if(req.body.country)address.country = req.body.country;
+      if(req.body.fullName)address.fullName = req.body.fullName;
+      if(req.body.city)address.city = req.body.city;
+      if(req.body.state)address.state = req.body.state;
+      if(req.body.zipCode)address.zipCode = req.body.zipCode;
+      if(req.body.phoneNumber)address.phoneNumber = req.body.phoneNumber;
+      if(req.body.deliverInstructions)address.deliverInstructions = req.body.deliverInstructions;
+      if(req.body.securityCode)address.securityCode = req.body.securityCode;
+        
+      await foundAddress.save();
+
+      res.json({
+        success: true,
+        message: "Succesfully updated the address"
+      });
+    }
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message,
+    });
+  }
+});
+
 module.exports = router;
