@@ -117,8 +117,11 @@ router.delete("/addresses/:id", verifyToken, async (req, res) => {
 /* PUT API - Set default */
 router.put("/addresses/:id", verifyToken, async(req, res) => {
   try {
-    const doc = await User.findOneAndUpdate({_id: req.decoded.id}, { $set: { address: req.body.id }});
-    if(doc) {
+    const updatedAddressUser = await User.findOneAndUpdate(
+        {_id: req.decoded.id},
+        { $set: { address: req.body.id }}
+      );
+    if(updatedAddressUser) {
       res.json({
         success: true,
         message: "Succesfully set this address as default"
