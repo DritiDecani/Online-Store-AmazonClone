@@ -88,4 +88,25 @@ router.put("/addresses/:id", verifyToken, async (req, res) => {
   }
 });
 
+
+router.delete("/addresses/:id", verifyToken, async (req, res) => {
+  try {
+    let deletedAddress = await Address.remove({
+      user: req.delete._id,
+      _id: req.params.id
+    });
+
+    if(deletedAddress) {
+      res.json({
+        success: true,
+        message: "Address has been deleted"
+      });
+    }
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: err.message,
+    });
+  }
+});  
 module.exports = router;
