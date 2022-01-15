@@ -7,7 +7,7 @@ router.post("/addresses", verifyToken, async (req, res) => {
   try {
     let address = new Address();
     address.user = req.decoded._id;
-    adress.country = req.body.country;
+    address.country = req.body.country;
     address.fullName = req.body.fullName;
     address.city = req.body.city;
     address.state = req.body.state;
