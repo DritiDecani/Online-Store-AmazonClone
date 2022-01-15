@@ -128,7 +128,21 @@ export default {
             }
         }, 
 
-       
+        async onSetDefault(id) {
+            try {
+                let response = await this.$axios.$put(`/api/addresses/set/default`, { 
+                    id: id 
+                });
+
+                if(response.success) {
+                    this.message = response.message;
+                    await this.$auth.fetchUser();
+                }
+            } catch(err) {
+                this.message = response.message;
+                console.log(err);
+            }
+        }
     }
 };
 </script>
