@@ -113,6 +113,22 @@ export default {
             message: ""
         }
     },
-    
+    methods: {
+        async OnDeleteAddress(id, index) {
+            try {
+                let response = await this.$axios.$delete(`/api/addresses/${id}`);
+
+                if(response.success) {
+                    this.message = response.message;
+                    this.addresses.splice(index, 1);
+                }
+            } catch(err) {
+                this.message = response.message;
+                console.log(err);
+            }
+        }, 
+
+       
+    }
 };
 </script>
