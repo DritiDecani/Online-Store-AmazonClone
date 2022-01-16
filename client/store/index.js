@@ -18,4 +18,13 @@ export const actions={
         }
          commit("incrementCartLength");
     }
-}
+};
+
+//Mutations that allows us change the states
+export const mutations={
+    pushProductToCart(state,product){
+        product.quantity=1;
+        state.cart.push(product);
+    },
+
+};
