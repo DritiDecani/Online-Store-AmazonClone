@@ -34,4 +34,13 @@ export const mutations={
 
     },
 
+    incrementCartLength(state){
+        state.cartLength=0;
+        if(state.cart.length>0){
+            state.cart.map(product=>{
+                state.cartLength+=product.quantity;
+            });
+        }
+    }
+
 };
