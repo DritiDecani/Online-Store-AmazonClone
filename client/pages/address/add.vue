@@ -256,7 +256,7 @@ export default {
           state: this.state,
           zipCode: this.zipCode,
           phoneNumber: this.phoneNumber,
-          deliverInstructions: this.deliverInstructions,
+          deliverInstructions: this.deliveryInstructions,
           securityCode: this.securityCode
         };
 
