@@ -27,4 +27,11 @@ export const mutations={
         state.cart.push(product);
     },
 
+    incrementProductQty(state,product){
+        product.quantity++;
+        let indexOfProduct=state.cart.indexOf(product);
+        state.cart.splice(indexOfProduct,1,product);
+
+    },
+
 };
