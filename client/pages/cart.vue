@@ -140,7 +140,7 @@
                   <h5 class="a-spacing-base">Your recently viewed items</h5>
                   <div class="a-spacing-micro">
                     <ul class="a-unordered-list recently-viewed">
-                      <li class="a-spacing-medium" v-for="i in 4" :key="i">
+                      <li class="a-spacing-medium" v-for="i in 3" :key="i">
                         <span class="a-list-item">
                           <div class="row">
                             <div class="col-md-4 col-sm-3 col-3 pl-0">
