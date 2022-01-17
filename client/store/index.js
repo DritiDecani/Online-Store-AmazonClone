@@ -11,10 +11,10 @@ export const actions={
         const cartProduct=state.cart.find(prod=>prod._id==product._id);
 
         if(!cartProduct){
-            commit("pushProductToCart",product);
+            commit("pushProductToCart", product);
 
         }else{
-            commit("incrementProductQty",product)
+            commit("incrementProductQty",  cartProduct)
         }
          commit("incrementCartLength");
     }
