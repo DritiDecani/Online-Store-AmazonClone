@@ -80,7 +80,7 @@
                           <p class="a-spacing-small">
                             <span
                               class="a-size-medium a-color-price sc-price sc-white-space-nowrap sc-product-price sc-price-sign a-text-bold"
-                            >${{ product.price }}</span>
+                            >${{ product.price * product.quantity }}</span>
                           </p>
                         </div>
                       </div>
@@ -92,10 +92,10 @@
                 <div class="text-right">
                   <!-- Cart Subtotal -->
                   <p class="a-spacing-none a-spacing-top-mini">
-                    <span class="a-size-medium">Subtotal (2 item)</span>
+                    <span class="a-size-medium">Subtotal ({{ getCartLength }} item)</span>
                     <span class="a-color-price a-text-bold">
                       <!-- Cart Total Price -->
-                      <span class="a-size-medium a-color-price">$99</span>
+                      <span class="a-size-medium a-color-price">${{ getCartTotalPrice }}</span>
                     </span>
                   </p>
                 </div>
@@ -110,10 +110,10 @@
                     <p class="a-spacing-none a-spacing-top-none">
                       <!-- Cart Subtotal -->
                       <span class="a-size-medium">
-                        <span>Subtotal (2 item):</span>
+                        <span>Subtotal ({{ getCartLength }} item):</span>
                         <span class="a-color-price a-text-bold">
                           <!-- Cart Total Price  -->
-                          <span class="a-size-medium a-color-price">$99</span>
+                          <span class="a-size-medium a-color-price">${{ getCartTotalPrice }}</span>
                         </span>
                       </span>
                     </p>
@@ -198,7 +198,7 @@
 import { mapGetters } from 'vuex';
 export default {
   computed: {
-    ...mapGetters(["getCart"])
+    ...mapGetters(["getCart", "getCartTotalPrice", "getCartLength"])
   }
 }
 </script>

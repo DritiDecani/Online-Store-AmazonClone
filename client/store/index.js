@@ -51,5 +51,13 @@ export const getters = {
     },
     getCart(state) {
         return state.cart;
+    },
+    getCartTotalPrice(state) {
+        let total = 0;
+        state.cart.map(product => {
+            total += product.price * product.quantity;
+        });
+
+        return total;
     }
 }
