@@ -32,13 +32,13 @@
                       <div class="displayAddressDiv">
                         <!-- User's address -->
                         <ul class="displayAddressUL">
-                          <li>fullName</li>
-                          <li>streetAddress</li>
-                          <li>city</li>
-                          <li>country</li>
+                          <li>{{ $auth.$state.user.address.fullName }}</li>
+                          <li>{{ $auth.$state.user.address.streetAddress }}</li>
+                          <li>{{ $auth.$state.user.address.city }}</li>
+                          <li>{{ $auth.$state.user.address.country }}</li>
                           <li>
                             Phone:
-                            <span dir="ltr">phoneNumber</span>
+                            <span dir="ltr">{{ $auth.$state.user.address.phoneNumber }}</span>
                           </li>
                         </ul>
                       </div>
@@ -358,7 +358,11 @@
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
-  layout: "none"
+  layout: "none",
+  computed: {
+      ...mapGetters(["getCart", "getCartTotalPrice"])
+  }
 };
 </script>
