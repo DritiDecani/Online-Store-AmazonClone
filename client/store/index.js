@@ -42,7 +42,7 @@ export const mutations={
             });
         }
     },
-    
+
     /**
      * 1. Find the product in the cart
      * 2. Change the quantity of the product
@@ -62,6 +62,17 @@ export const mutations={
 
         let indexOfProduct = state.cart.indexOf(cartProduct);
         state.cart.splice(indexOfProduct, 1, cartProduct);
+    },
+
+    /**
+     * 1. Remove the product quantity from the cartLength
+     * 2. Get the index of the product that we want to delete
+     * 3. Remove the product by using splice
+     */
+    removeProduct(state, product) {
+        state.cartLength -= product.quantity;
+        let indexOfProduct = state.cart.indexOf(product);
+        state.cart.splice(indexOfProduct, 1);
     }
 };
 
