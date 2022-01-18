@@ -319,7 +319,14 @@
           </div>
         </div>
       </div>
-      
+      <div class="a-row a-spacing-small a-spacing-top-small">
+        <p class="a-color-secondary a-size-mini">
+          Do you need help? Explore our
+          <a href="#">Help pages</a> or
+          <a href="#">contact us</a>
+        </p>
+        
+      </div>
       <hr />
       <p class="a-size-small a-text-center a-color-secondary" data-testid>
         <a href="#">Conditions of Use</a> |
