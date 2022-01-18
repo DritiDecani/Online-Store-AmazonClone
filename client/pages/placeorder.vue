@@ -320,6 +320,11 @@
         </div>
       </div>
       
+      <hr />
+      <p class="a-size-small a-text-center a-color-secondary" data-testid>
+        <a href="#">Conditions of Use</a> |
+        <a href="#">Privacy Notice</a> © 1996-2019, Amazon.com, Inc.
+      </p>
     </div>
   </div>
   <!--/SHIPPING ADDRESS-->
