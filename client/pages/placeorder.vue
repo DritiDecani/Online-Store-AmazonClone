@@ -325,6 +325,15 @@
           <a href="#">Help pages</a> or
           <a href="#">contact us</a>
         </p>
+        <p
+          class="a-color-secondary a-size-mini"
+        >For an item sold by Amazon.com: When you click the "Place your order" button, we'll send you an email message acknowledging receipt of your order. Your contract to purchase an item will not be complete until we send you an email notifying you that the item has been shipped.</p>
+        <p id="state-sales-tax-info" class="a-color-secondary a-size-mini">
+          Colorado, Oklahoma, South Dakota and Vermont Purchasers:
+          <a
+            href="#"
+          >Important information regarding sales tax you may owe in your State</a>
+        </p>
         
       </div>
       <hr />
