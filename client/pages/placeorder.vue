@@ -334,7 +334,17 @@
             href="#"
           >Important information regarding sales tax you may owe in your State</a>
         </p>
-        
+        <div class="a-color-secondary a-size-mini">
+          <p class="a-color-secondary a-size-mini">
+            Within 30 days of delivery, you may return new, unopened merchandise in its original condition. Exceptions and restrictions apply. See Amazon.com's
+            <a
+              href="#"
+            >Returns Policy</a>
+            <br />
+            <br />Go to the
+            <a href="#">Amazon.com homepage</a> without completing your order.
+          </p>
+        </div>
       </div>
       <hr />
       <p class="a-size-small a-text-center a-color-secondary" data-testid>
