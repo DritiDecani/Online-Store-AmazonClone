@@ -77,7 +77,7 @@ export const mutations={
         state.cart.splice(indexOfProduct, 1);
     },
 
-    setShipment(state,{price,estimatedDelivery}){
+    setShipping(state,{price,estimatedDelivery}){
      state.shippingPrice=price;
      state.shippingEstimatedDelivery=estimatedDelivery;
     }
