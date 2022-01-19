@@ -178,7 +178,7 @@
                         <!-- Delivery option -->
                         <div class="a-spacing-mini wednesday">
                           <!-- Shipping normal -->
-                          <input type="radio" name="order0" @change="onChooseShipping('normal')" />
+                          <input type="radio" name="order0" checked="check" @change="onChooseShipping('normal')" />
                           <span class="a-radio-label">
                             <span class="a-color-success">
                               <strong>Averages 7 business days</strong>
@@ -259,7 +259,7 @@
                     <!-- Total Price with Shipping -->
                     <div class="row">
                       <div class="col-sm-6">Total Before Tax:</div>
-                      <div class="col-sm-6 text-right">USD 300023</div>
+                      <div class="col-sm-6 text-right">USD {{getCartTotalPriceWithShipping}}</div>
                     </div>
                     <div class="row">
                       <div class="col-sm-6">Estimated tax to be collected:</div>
@@ -272,7 +272,7 @@
                       </div>
                       <div class="col-sm-6 text-right">
                         <!-- Total Price with Shipping -->
-                        <div class="a-color-price a-size-medium a-text-bold">USD 300023</div>
+                        <div class="a-color-price a-size-medium a-text-bold">USD {{getCartTotalPriceWithShipping}}</div>
                       </div>
                     </div>
                   </div>
@@ -378,7 +378,7 @@ export default {
     }
   },
   computed: {
-      ...mapGetters(["getCart", "getCartTotalPrice"])
+      ...mapGetters(["getCart", "getCartTotalPrice","getCartTotalPriceWithShipping"])
   },
   methods:{
   async onChooseShipping(shipment){

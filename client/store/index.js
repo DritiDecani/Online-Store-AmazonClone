@@ -97,5 +97,13 @@ export const getters = {
         });
 
         return total;
+    },
+    getCartTotalPriceWithShipping(state) {
+        let total = 0;
+        state.cart.map(product => {
+            total += product.price * product.quantity;
+        });
+
+        return total+state.shippingPrice;
     }
 }
