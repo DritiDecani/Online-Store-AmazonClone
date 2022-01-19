@@ -116,7 +116,7 @@
                 <!-- Estimated delivery -->
                 <div
                   class="a-row a-color-state a-text-bold a-size-medium a-spacing-small"
-                >Estimated delivery: 29 November 2019</div>
+                >Estimated delivery:{{estimatedDelivery}}</div>
                 <div class="row">
                   <!-- Cart -->
                   <div class="col-xl-6 col-lg-7 col-sm-6 col-12">
@@ -248,7 +248,7 @@
                     <div class="row">
                       <!-- Shipping cost -->
                       <div class="col-sm-6">Shipping & handling:</div>
-                      <div class="col-sm-6 text-right">USD 92</div>
+                      <div class="col-sm-6 text-right">USD {{shippingPrice}}</div>
                     </div>
                     <div class="row mt-2">
                       <div class="col-sm-6"></div>
@@ -361,6 +361,22 @@
 import { mapGetters } from "vuex";
 export default {
   layout: "none",
+  async asyncData({$axios,store}){
+    try{
+      let response=await $axios.$post("/api/shipment",{
+        shipment:"fast"
+      });
+      
+      store.commit("setShipping",{price:response.shipment.price,estimatedDelivery:response.shipment.estimated});
+      return{
+        shippingPrice:response.shipment.price,
+        estimatedDelivery:response.shipment.estimated
+      };
+
+    }catch(err){
+
+    }
+  },
   computed: {
       ...mapGetters(["getCart", "getCartTotalPrice"])
   }
