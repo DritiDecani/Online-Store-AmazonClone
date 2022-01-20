@@ -1,22 +1,22 @@
-export const state=()=>({
+export const state = () => ({
     //state
-    cart:[],
-    cartLength:0,
-    shippingPrice:0,
-    shippingEstimatedDelivery:""
+    cart: [],
+    cartLength: 0,
+    shippingPrice: 0,
+    shippingEstimatedDelivery: ""
 
 })
 
 //state actions
-export const actions={
-    addProductToCart({state,commit},product){
-        const cartProduct=state.cart.find(prod=>prod._id==product._id);
+export const actions = {
+    addProductToCart({ state, commit }, product){
+        const cartProduct = state.cart.find(prod => prod._id == product._id);
 
         if(!cartProduct){
             commit("pushProductToCart", product);
 
         }else{
-            commit("incrementProductQty",  cartProduct)
+            commit("incrementProductQty", cartProduct)
         }
          commit("incrementCartLength");
     }
@@ -80,6 +80,13 @@ export const mutations={
     setShipping(state,{price,estimatedDelivery}){
      state.shippingPrice=price;
      state.shippingEstimatedDelivery=estimatedDelivery;
+    },
+
+    clearCart(state) {
+        state.cart = [];
+        state.cartLength = 0;
+        state.shippingPrice = 0;
+        state.shippingEstimatedDelivery = "";
     }
 };
 
@@ -105,5 +112,8 @@ export const getters = {
         });
 
         return total+state.shippingPrice;
+    },
+    getEstimatedDelivery(state) {
+        return state.shippingEstimatedDelivery;
     }
 }

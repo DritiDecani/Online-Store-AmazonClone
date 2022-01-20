@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const moment = require("moment");
-const stripe=require("stripe");
-const verifyToken=reuire("../middlewares/verify-token");
-const Order=require("../models/order");
+const stripe = require("stripe")(process.env.STRIPE_SECREY_KEY);
+const verifyToken = require("../middlewares/verify-token");
+const Order = require("../models/order");
 
 const SHIPMENT = {
     normal: {
@@ -35,48 +35,46 @@ router.post("/shipment", (req, res) => {
     });
 });
 
-router.post("/payment",(req,res)=>{
-    let totalPrice=Math.round(req.body.totalPrice*100);
-    stripe.costumers
-    .create({
-        email:req.body.decoded.email
-    })
-    .then(costumer=>{
-        return stripe.costumers.createSource(costumer.id,{
+router.post("/payment", verifyToken, (req, res)=>{
+    let totalPrice = Math.round(req.body.totalPrice * 100);
+    stripe.customers.create({
+        email: req.decoded.email
+    }).then(customer => {
+        return stripe.customers.createSource(customer.id, {
             source:"tok_visa"
         });
-    })
-    .then(source=>{
+    }).then(source => {
         return stripe.charges.create({
-            amount:totalPrice,
-            currency:"eur",
-            costumer:source.costumer
+            amount: totalPrice,
+            currency: "eur",
+            customer: source.customer
         });
     })
-    .then(async charge=>{
-        let order=new Order();
-        let cart=req.body.cart;
+    .then(async charge => {
+        let order = new Order();
+        let cart = req.body.cart;
 
-        cart.map(product=>{
+        cart.map(product => {
             order.products.push({
-                productID:product._id,
-                quantity:parseInt(product.quantity),
-                price:product.price
+                productID: product._id,
+                quantity: parseInt(product.quantity),
+                price: product.price
             });
         })
-        order.owner=req.decoded._id;
-        order.estimatedDelivery=req.body.estimatedDelivery;
+        order.owner = req.decoded._id;
+        order.estimatedDelivery = req.body.estimatedDelivery;
         await order.save();
 
-    })
-
-    .catch(err=>{
+        res.json({
+            succes: true,
+            message: "Successfully made a payment"
+        });
+    }).catch(err => {
         res.status(500).json({
-            succes:false,
-            message:err.message
+            succes: false,
+            message: err.message
         });
     });
 });
-
 
 module.exports = router;

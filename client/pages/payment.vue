@@ -34,7 +34,7 @@
             <div class="a-section">
               <h2>Make a payment</h2>
               <div class="a-section a-spacing-none a-spacing-top-small">
-                <b>The total price is $999999</b>
+                <b>The total price is ${{ getCartTotalPriceWithShipping }}</b>
               </div>
 
               <!-- Error message  -->
@@ -64,7 +64,7 @@
                   <div class="a-spacing-top-large">
                     <span class="a-button-register">
                       <span class="a-button-inner">
-                        <span class="a-button-text">Purchase</span>
+                        <span @click="onPurchase" class="a-button-text">Purchase</span>
                       </span>
                     </span>
                   </div>
@@ -82,8 +82,7 @@
 </template>
 
 <script>
-
-
+import { mapGetters } from "vuex";
 export default {
     data(){
         return{
@@ -92,11 +91,39 @@ export default {
             card:null
         };
     },
+    computed: {
+      ...mapGetters([
+      "getCart", 
+      "getCartTotalPriceWithShipping", 
+      "getEstimatedDelivery"])
+    },
     mounted(){
         this.stripe=Stripe("pk_test_51KJjHAD4IeWrQ75DSDp1ay3moHHtz5qKg7g26AdLS6bNcQB3tkVmwjfX9OVWqA15RpOJY8b8pEuBnRHIBawrUzN7001xExNmwO");
         let elements=this.stripe.elements();
         this.card=elements.create("card");
         this.card.mount(this.$refs.card);
+    },
+    methods: {
+      async onPurchase() {
+        try {
+          let token = await this.stripe.createToken(this.card);
+          let response = await this.$axios.$post("/api/payment", {
+            token: token,
+            totalPrice: this.getCartTotalPriceWithShipping,
+            cart: this.getCart,
+            estimatedDelivery: this.getEstimatedDelivery
+          });
+
+          if (response.success) {
+            //Do something like redirecting to the home page
+
+            this.$store.commit("clearCart")
+            this.$router.push("/")
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      }
     }
 };
 </script>
