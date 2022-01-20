@@ -45,7 +45,7 @@
                 <div class="a-spacing-medium a-spacing-top-medium">
                   <div class="a-spacing-top-medium">
                     <!-- Stripe card -->
-
+                    <div ref="card"></div>
                     <!-- End of Stripe card -->
                   </div>
 
@@ -80,6 +80,26 @@
   </main>
   <!--/MAIN-->
 </template>
+
+<script>
+
+
+export default {
+    data(){
+        return{
+            error:"",
+            stripe:null,
+            card:null
+        };
+    },
+    mounted(){
+        this.stripe=Stripe("pk_test_51KJjHAD4IeWrQ75DSDp1ay3moHHtz5qKg7g26AdLS6bNcQB3tkVmwjfX9OVWqA15RpOJY8b8pEuBnRHIBawrUzN7001xExNmwO");
+        let elements=this.stripe.elements();
+        this.card=elements.create("card");
+        this.card.mount(this.$refs.card);
+    }
+};
+</script>
 
 
 <style>
