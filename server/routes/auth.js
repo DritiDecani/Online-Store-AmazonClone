@@ -35,29 +35,31 @@ router.post("/auth/signup", async (req, res) => {
 });
 
 /* Profile Route */
-router.get("/auth/user",verifyToken, async(req, res) => {
+router.get("/auth/user", verifyToken, async (req, res) => {
   try {
-    let foundUser = await User.findOne({_id: req.decoded._id}).populate('address');
-    if(foundUser) {
+    let foundUser = await User.findOne({ _id: req.decoded._id }).populate(
+      "address"
+    );
+    if (foundUser) {
       res.json({
         success: true,
-        user: foundUser
-      })
+        user: foundUser,
+      });
     }
-  } catch(err) {
+  } catch (err) {
     res.status(500).json({
       success: false,
-      message: err.message
+      message: err.message,
     });
   }
 });
 
 /* Update a profile */
-router.put("/auth/user", verifyToken, async(req, res) => {
+router.put("/auth/user", verifyToken, async (req, res) => {
   try {
     let foundUser = await User.findOne({ _id: req.decoded._id });
 
-    if(foundUser) {
+    if (foundUser) {
       if (req.body.name) foundUser.name = req.body.name;
       if (req.body.email) foundUser.email = req.body.email;
       if (req.body.password) foundUser.password = req.body.password;
@@ -66,43 +68,43 @@ router.put("/auth/user", verifyToken, async(req, res) => {
 
       req.json({
         success: true,
-        message: "Succesfully updated"
+        message: "Succesfully updated",
       });
     }
   } catch (err) {
     res.status(500).json({
       success: false,
-      message: err.message
+      message: err.message,
     });
   }
 });
 
 /* Login Route */
-router.post("/auth/login", async(req, res) => {
+router.post("/auth/login", async (req, res) => {
   try {
-    let foundUser = await User.findOne({email: req.body.email});
-    if(!foundUser) {
+    let foundUser = await User.findOne({ email: req.body.email });
+    if (!foundUser) {
       res.status(403).json({
         success: false,
-        message: "Authentication failed, User not found"
-      })
+        message: "Authentication failed, User not found",
+      });
     } else {
-      if(foundUser.comparePassword(req.body.password)) {
+      if (foundUser.comparePassword(req.body.password)) {
         let token = jwt.sign(foundUser.toJSON(), process.env.SECRET, {
-          expiresIn: 604800 // 1 week
-        })
-        res.json({ success: true, token: token});
+          expiresIn: 604800, // 1 week
+        });
+        res.json({ success: true, token: token });
       } else {
         res.status(403).json({
-          success:false,
-          message: "Authentication failed, Wrong password!"
-        })
+          success: false,
+          message: "Authentication failed, Wrong password!",
+        });
       }
     }
-  } catch(err) {
+  } catch (err) {
     res.status(500).json({
       success: false,
-      message: err.message
+      message: err.message,
     });
   }
 });
