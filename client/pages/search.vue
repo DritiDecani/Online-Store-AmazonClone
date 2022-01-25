@@ -128,32 +128,24 @@
 
 <script>
 import StarRating from 'vue-star-rating';
+import FeaturedProduct from '~/components/FeaturedProduct.vue';
 export default {
   components: {
-    StarRating
+    StarRating,
+    FeaturedProduct
   },
 
   watchQuery:["title"],
   
   async asyncData({$axios,query}){
     try{
-      let products=await $axios.$post('/api/search',{title: query.title});
-      let response = await $axios.$get("/api/products");
+      let product=await $axios.$post('/api/search',{title: query.title});
+       let response = await $axios.$get('/api/products');
       return{
-        products
-      };
-    }catch(err){
-      console.log(err);
-    }
-  },
-   async asyncData2({$axios}) {
-    try {
-      let response = await $axios.$get("/api/products");
-      console.log(response);
-      return {
+        product,
         products: response.products
       };
-    } catch (err) {
+    }catch(err){
       console.log(err);
     }
   }
