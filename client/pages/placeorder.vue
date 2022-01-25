@@ -5,7 +5,7 @@
     <div class="shipping-address">
       <div class="navbarShipping a-spacing-large">
         <nuxt-link to="/">
-          <img src="img/placeHeadernav.gif" class="img-fluid" />
+          <img src="img/logo.png" class="img-fluid" />
         </nuxt-link>
       </div>
       <div class="a-row">
@@ -148,7 +148,7 @@
                           </div>
                           <div
                             class="a-row a-color-secondary a-size-small"
-                          >Sold by:&nbsp;Amazon.com Services, Inc</div>
+                          >Sold by:&nbsp;Webstore.com Services, Inc</div>
                           <div class="a-row">
                             <div class="a-row a-spacing-top-micro">
                               <span class="a-button-small">
@@ -215,11 +215,11 @@
               <div class="a-box-inner">
                 <div class="a-row a-spacing-micro">
                   <nuxt-link to="/payment">
-                    <span class="a-button-place-order">Place your order in USD</span>
+                    <span class="a-button-place-order">Place your order in EUR</span>
                   </nuxt-link>
                 </div>
                 <div class="a-row a-spacing-small a-size-small a-text-center">
-                  By placing your order, you agree to Amazon's
+                  By placing your order, you agree to WEB Store's
                   <a href="#">privacy notice</a>
                   and
                   <a href="#">conditions of use</a>.
@@ -229,7 +229,7 @@
                     <div class="a-box a-alert-info a-spacing-small">
                       <div class="a-box-inner alert-info-no-icon">
                         <strong>
-                          Amazon Currency Converter is Enabled. &nbsp;
+                          WEB Store Currency Converter is Enabled. &nbsp;
                           <a
                             href="#"
                             class="a-size-mini"
@@ -243,12 +243,12 @@
                     <div class="row">
                       <!-- Cart's total price -->
                       <div class="col-sm-6">Items:</div>
-                      <div class="col-sm-6 text-right">USD ${{ getCartTotalPrice }}</div>
+                      <div class="col-sm-6 text-right">EUR €{{ getCartTotalPrice }}</div>
                     </div>
                     <div class="row">
                       <!-- Shipping cost -->
                       <div class="col-sm-6">Shipping & handling:</div>
-                      <div class="col-sm-6 text-right">USD {{shippingPrice}}</div>
+                      <div class="col-sm-6 text-right">EUR {{shippingPrice}}</div>
                     </div>
                     <div class="row mt-2">
                       <div class="col-sm-6"></div>
@@ -259,11 +259,11 @@
                     <!-- Total Price with Shipping -->
                     <div class="row">
                       <div class="col-sm-6">Total Before Tax:</div>
-                      <div class="col-sm-6 text-right">USD {{getCartTotalPriceWithShipping}}</div>
+                      <div class="col-sm-6 text-right">EUR {{getCartTotalPriceWithShipping}}</div>
                     </div>
                     <div class="row">
                       <div class="col-sm-6">Estimated tax to be collected:</div>
-                      <div class="col-sm-6 text-right">USD 0.00</div>
+                      <div class="col-sm-6 text-right">EUR 0.00</div>
                     </div>
                     <hr />
                     <div class="row">
@@ -272,7 +272,7 @@
                       </div>
                       <div class="col-sm-6 text-right">
                         <!-- Total Price with Shipping -->
-                        <div class="a-color-price a-size-medium a-text-bold">USD {{getCartTotalPriceWithShipping}}</div>
+                        <div class="a-color-price a-size-medium a-text-bold">EUR {{getCartTotalPriceWithShipping}}</div>
                       </div>
                     </div>
                   </div>
@@ -290,7 +290,7 @@
                     <fieldset class="pl-3">
                       <span style="margin-left: 1rem;">
                         <input type="radio" class="no-js-hide" value="transactional" />
-                        <span class="a-radio-label">USD</span>
+                        <span class="a-radio-label">EUR</span>
                       </span>
                       <div class="a-row">
                         <span class="a-size-mini">
@@ -327,7 +327,7 @@
         </p>
         <p
           class="a-color-secondary a-size-mini"
-        >For an item sold by Amazon.com: When you click the "Place your order" button, we'll send you an email message acknowledging receipt of your order. Your contract to purchase an item will not be complete until we send you an email notifying you that the item has been shipped.</p>
+        >For an item sold by WEB Store.com: When you click the "Place your order" button, we'll send you an email message acknowledging receipt of your order. Your contract to purchase an item will not be complete until we send you an email notifying you that the item has been shipped.</p>
         <p id="state-sales-tax-info" class="a-color-secondary a-size-mini">
           Colorado, Oklahoma, South Dakota and Vermont Purchasers:
           <a
@@ -336,20 +336,20 @@
         </p>
         <div class="a-color-secondary a-size-mini">
           <p class="a-color-secondary a-size-mini">
-            Within 30 days of delivery, you may return new, unopened merchandise in its original condition. Exceptions and restrictions apply. See Amazon.com's
+            Within 30 days of delivery, you may return new, unopened merchandise in its original condition. Exceptions and restrictions apply. See WEBStore.com's
             <a
               href="#"
             >Returns Policy</a>
             <br />
             <br />Go to the
-            <a href="#">Amazon.com homepage</a> without completing your order.
+            <a href="http://localhost:9000/">WEBStore.com homepage</a> without completing your order.
           </p>
         </div>
       </div>
       <hr />
       <p class="a-size-small a-text-center a-color-secondary" data-testid>
         <a href="#">Conditions of Use</a> |
-        <a href="#">Privacy Notice</a> © 1996-2019, Amazon.com, Inc.
+        <a href="#">Privacy Notice</a> © 1996-2019, WEBStore.com, Inc.
       </p>
     </div>
   </div>
