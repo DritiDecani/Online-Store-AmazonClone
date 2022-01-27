@@ -6,9 +6,9 @@
           <!--Logo-->
           <div class="col-sm-2">
             <div class="logo-area">
-              <nuxt-link to="/">
+              <a href="/">
                 <img src="/img/logo.png" alt="logo" class="img-fluid/" />
-              </nuxt-link>
+              </a>
             </div>
           </div>
           <!--Search bar-->
