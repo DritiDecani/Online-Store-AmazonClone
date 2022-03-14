@@ -41,6 +41,7 @@ const addressRoutes = require("./routes/address");
 const paymentRoutes = require("./routes/payment");
 const orderRoutes = require("./routes/order");
 const searchRoutes = require("./routes/search");
+const contactRoutes = require("./routes/contact");
 
 app.use("/api", productRoutes);
 app.use("/api", categoryRoutes);
@@ -51,6 +52,7 @@ app.use("/api", addressRoutes);
 app.use("/api", paymentRoutes);
 app.use("/api", orderRoutes);
 app.use("/api", searchRoutes);
+app.use("/api", contactRoutes);
 
 app.listen(3000, (err) => {
   if (err) {

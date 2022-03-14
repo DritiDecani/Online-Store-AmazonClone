@@ -56,9 +56,8 @@
                 <div class="nav-xshop">
                   <a href="#" class="nav-a">Today's deals</a>
                   <a href="#" class="nav-a">Your OnlineStore.com</a>
-                  <a href="#" class="nav-a">Gift cards</a>
-                  <a href="#" class="nav-a">Registry</a>
-                  <a href="#" class="nav-a">Sell</a>
+                  <a href="#" class="nav-a">Gift cards</a>                 
+                  <a href="/contact" class="nav-a">Contact Us</a>
                 </div>
               </div>
             </div>

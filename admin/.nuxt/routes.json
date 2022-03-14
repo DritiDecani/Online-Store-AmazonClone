@@ -2,37 +2,37 @@
   {
     "name": "about",
     "path": "/about",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
     "chunkName": "pages/about"
   },
   {
     "name": "category",
     "path": "/category",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
     "chunkName": "pages/category"
   },
   {
     "name": "owner",
     "path": "/owner",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
     "chunkName": "pages/owner"
   },
   {
     "name": "products",
     "path": "/products",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
     "chunkName": "pages/products/index"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
     "chunkName": "pages/products/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "C:\\\\Users\\\\shpat\\\\Desktop\\\\OnlinestoreREAL\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
     "chunkName": "pages/index"
   }
 ]
