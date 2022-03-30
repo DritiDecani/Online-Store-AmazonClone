@@ -11,6 +11,8 @@
               <nuxt-link to="/products" class="a-button-buy-again">Add a new product</nuxt-link>
               <nuxt-link to="/category" class="a-button-history margin-right-10">Add a new category</nuxt-link>
               <nuxt-link to="/owner" class="a-button-history margin-right-10">Add a new owner</nuxt-link>
+            <nuxt-link to="/contact" class="a-button-history margin-right-10">Client Messages</nuxt-link>
+
 
           </div>
       </div>

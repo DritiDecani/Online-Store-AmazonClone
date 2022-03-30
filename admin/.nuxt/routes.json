@@ -3,36 +3,49 @@
     "name": "about",
     "path": "/about",
     "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_6b8fafca"
   },
   {
     "name": "category",
     "path": "/category",
     "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\category.vue",
-    "chunkName": "pages/category"
+    "chunkName": "pages/category",
+    "_name": "_22f42a51"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_6e408cc6"
   },
   {
     "name": "owner",
     "path": "/owner",
     "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\owner.vue",
-    "chunkName": "pages/owner"
+    "chunkName": "pages/owner",
+    "_name": "_87130820"
   },
   {
     "name": "products",
     "path": "/products",
     "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\index.vue",
-    "chunkName": "pages/products/index"
+    "chunkName": "pages/products/index",
+    "_name": "_41646ceb"
   },
   {
     "name": "products-id",
     "path": "/products/:id",
     "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\products\\\\_id.vue",
-    "chunkName": "pages/products/_id"
+    "chunkName": "pages/products/_id",
+    "_name": "_1b22a3da"
   },
   {
     "name": "index",
     "path": "/",
     "component": "E:\\\\Online store\\\\Online-Store\\\\admin\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_e970eae2"
   }
 ]
