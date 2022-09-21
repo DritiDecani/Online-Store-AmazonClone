@@ -1,4 +1,4 @@
-# Online-Store
+# Online-Store / Amazon Clone
 
 Npm install  admin + server 
 
